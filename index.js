@@ -129,7 +129,7 @@ async function run() {
       }
     });
 
-    
+    // Create Stripe payment intent
     app.post('/api/create-payment-intent', async (req, res) => {
       try {
         const { price } = req.body;
