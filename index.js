@@ -317,7 +317,7 @@ async function run() {
       }
     });
 
-    // Update teacher status
+   
     app.patch('/api/teachers/:id', async (req, res) => {
       try {
         const { id } = req.params;
