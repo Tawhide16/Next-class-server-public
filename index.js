@@ -97,7 +97,7 @@ async function run() {
       res.send('Hello from EduManage Server!');
     });
 
-    
+    // Get all enrollments (payment history) by student email
     app.get('/api/enrollments/history/:studentEmail', verifyFirebaseToken, async (req, res) => {
       try {
         const { studentEmail } = req.params;
@@ -111,7 +111,7 @@ async function run() {
       }
     });
 
-    // Get all enrollments (all students)
+    
     app.get('/api/enrollments/history', async (req, res) => {
       try {
         const enrollments = await enrollmentCollection.find().toArray();
