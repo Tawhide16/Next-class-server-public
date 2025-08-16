@@ -184,7 +184,7 @@ async function run() {
     });
 
 
-    // Get teacher details by email
+    
     app.get("/api/users/teacher-details/:email", async (req, res) => {
       try {
         const email = decodeURIComponent(req.params.email);
