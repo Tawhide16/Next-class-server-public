@@ -306,7 +306,7 @@ async function run() {
       }
     });
 
-    
+    // Get all teacher requests
     app.get('/api/teachers', async (req, res) => {
       try {
         const teachers = await teacherCollection.find().toArray();
