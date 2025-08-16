@@ -207,7 +207,7 @@ async function run() {
     });
 
     // Get teacher application status by email
-    
+    //  Check teacher status by email
     app.get('/api/teachers/status/:email', async (req, res) => {
       try {
         const email = decodeURIComponent(req.params.email);
