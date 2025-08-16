@@ -149,7 +149,7 @@ async function run() {
       }
     });
 
-    
+    // Check if student is enrolled in a class
     app.get('/api/enrollments', async (req, res) => {
       try {
         const { studentEmail, classId } = req.query;
