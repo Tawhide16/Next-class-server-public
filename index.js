@@ -293,7 +293,7 @@ async function run() {
       }
     });
 
-    
+    // Submit Teacher Application
     app.post('/api/teachers', async (req, res) => {
       try {
         const teacher = req.body;
@@ -306,7 +306,7 @@ async function run() {
       }
     });
 
-    // Get all teacher requests
+    
     app.get('/api/teachers', async (req, res) => {
       try {
         const teachers = await teacherCollection.find().toArray();
