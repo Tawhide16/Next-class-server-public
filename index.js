@@ -293,7 +293,7 @@ async function run() {
       }
     });
 
-    // Submit Teacher Application
+    
     app.post('/api/teachers', async (req, res) => {
       try {
         const teacher = req.body;
