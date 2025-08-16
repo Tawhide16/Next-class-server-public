@@ -263,7 +263,7 @@ async function run() {
       }
     });
 
-    
+    // Add new user
     app.post('/api/users', async (req, res) => {
       try {
         const user = req.body;
