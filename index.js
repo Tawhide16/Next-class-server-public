@@ -317,7 +317,7 @@ async function run() {
       }
     });
 
-   
+    // Update teacher status
     app.patch('/api/teachers/:id', async (req, res) => {
       try {
         const { id } = req.params;
@@ -334,7 +334,7 @@ async function run() {
       }
     });
 
-    // Check if user is teacher
+    
     app.get('/api/users/teacher/:email', async (req, res) => {
       try {
         const email = req.params.email;
