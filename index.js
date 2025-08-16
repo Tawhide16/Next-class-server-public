@@ -74,7 +74,7 @@ async function run() {
 
     const db = client.db("eduManage");
 
-    // Collections
+    
     const userCollection = db.collection("users");
     const teacherCollection = db.collection("teachers");
     const enrollmentCollection = db.collection("enrollments");
