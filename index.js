@@ -111,7 +111,7 @@ async function run() {
       }
     });
 
-    
+    // Get all enrollments (all students)
     app.get('/api/enrollments/history', async (req, res) => {
       try {
         const enrollments = await enrollmentCollection.find().toArray();
